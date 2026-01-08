@@ -2,3 +2,12 @@
 @use "./themes/_index.scss";
 
 // put your custom CSS here!
+.img-container {
+  text-align: center;
+  margin: 1rem 0;
+}
+
+.img-container img {
+  max-width: 400px;
+  border-radius: 10px;
+}

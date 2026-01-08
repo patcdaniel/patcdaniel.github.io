@@ -7,12 +7,14 @@ tags:
   - modeling
   - interactive
 ---
-
-# NPZD Model Simulator
-
 An interactive web-based simulator for visualizing Nutrient-Phytoplankton-Zooplankton-Detritus (NPZD) ecosystem dynamics.
+<!-- 
+<img src="images/NPZD_Wire.png" style="max-width: 300px;border-radius: 10px;" alt="Example NPZD Model Wire Flow Diagram"> -->
 
-![NPZD Model](https://patcdaniel.github.io/npz-model/)
+<div class="img-container">
+  <img src="images/NPZD_Wire.gif" alt="description">
+</div>
+
 
 ## Features
 
@@ -46,11 +48,23 @@ The simulator implements a 4-compartment marine ecosystem model with Michaelis-M
 
 ## Inspiration
 
-Inspired by [bradyrx/NPZD-Model](https://github.com/bradyrx/NPZD-Model) - an excellent Jupyter notebook implementation of similar dynamics.
+Inspired by [bradyrx/NPZD-Model](https://github.com/bradyrx/NPZD-Model) - a Jupyter notebook implementation of similar dynamics.
 
 ## Use Cases
 
 - Educational tool for understanding marine ecosystem dynamics
 - Exploring parameter sensitivity in plankton models
 - Demonstrating nutrient cycling pathways
-- Testing hypotheses about ecosystem stability and oscillations
+
+## Suggested Activities
+1. Run the NPZD model with the default conditions (at higher speed if you are impatient) and describe the cyclic pattern. Feel free to Pause things periodically when things start to change.
+2. Try varying some of the parameters. How can these affect the frequency of the cycle? Can you create steady state, where parameters are in equilibrium? 
+	- I was able to get a steady state by messing with grazing ( lower lambda to make the equation basically linear or lower R_m, so that grazing is always low, regardless of P)
+
+__Discussion__
+1. What are some of the broad assumptions of this model?
+  - Conservation of Mass
+  - Different equations to parameterize Growth and Grazing
+2. What are the limits of only considering a single "Nutrient" pool?
+  - Think about Fe-limitation
+3. How might some of the different parameters change over a season?

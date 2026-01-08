@@ -2,13 +2,10 @@
 
 A clean, minimal blog built with [Quartz 4](https://quartz.jzhao.xyz/) and hosted on GitHub Pages.
 
-## 🚀 Quick Start
+## Quick Start
 
 ### Build and Preview
 ```bash
-# Build the site
-npx quartz build
-
 # Build and serve locally
 npx quartz build --serve
 ```
@@ -24,7 +21,7 @@ This script automatically:
 - Syncs images to the `content/images/` directory
 - Updates image paths in markdown files
 
-## 📁 Project Structure
+## Project Structure
 
 ```
 blog-quartz/
@@ -51,7 +48,7 @@ blog-quartz/
 2. Add images to `content/images/`
 3. Reference images with `![[images/your-image.png]]`
 
-## 🎨 Theme
+## Theme
 
 Currently using **Tokyo Night** theme. To switch themes:
 
@@ -65,20 +62,20 @@ npx quartz build
 
 Browse more themes: [quartz-themes](https://github.com/saberzero1/quartz-themes)
 
-## 🌐 Deployment
+## Deployment
 
 Automatic deployment to GitHub Pages via GitHub Actions:
 - Push to `main` branch triggers deployment
 - Site URL: https://patcdaniel.github.io
 
-## ⚙️ Configuration
+## Configuration
 
 - **Site title**: Edit `pageTitle` in `quartz.config.ts`
 - **Footer links**: Edit `footer` in `quartz.layout.ts`
 - **Theme colors**: Edit `theme.colors` in `quartz.config.ts`
 - **Typography**: Edit `theme.typography` in `quartz.config.ts`
 
-## 📝 Notes
+## Notes
 
 - This is a clean Quartz installation without development files
 - Your main Obsidian vault stays separate and private
